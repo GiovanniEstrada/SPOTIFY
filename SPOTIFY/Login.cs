@@ -71,7 +71,7 @@ namespace SPOTIFY
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Register form2 = new Register();
             form2.Show();
             this.Hide();
         }
