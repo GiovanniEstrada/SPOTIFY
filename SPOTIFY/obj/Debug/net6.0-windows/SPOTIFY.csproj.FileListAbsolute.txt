@@ -3,7 +3,6 @@ C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\SPOTIFY.dep
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\SPOTIFY.runtimeconfig.json
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\SPOTIFY.dll
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\SPOTIFY.pdb
-C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.Form1.resources
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.csproj.GenerateResource.cache
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.AssemblyInfoInputs.cache
@@ -15,7 +14,6 @@ C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.pdb
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.genruntimeconfig.cache
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\ref\SPOTIFY.dll
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.Properties.Resources.resources
-C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.Form2.resources
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\Google.Protobuf.dll
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
@@ -36,3 +34,9 @@ C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\bin\Debug\net6.0-windows\runtimes\br
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.csproj.AssemblyReference.cache
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.csproj.CopyComplete
 C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.MenuAdmin.resources
+C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.Login.resources
+C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.Register.resources
+C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.MenuCliente.resources
+C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.GestionUsuarios.resources
+C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.GestionarArtista.resources
+C:\Users\cgiov\source\repos\SPOTIFY\SPOTIFY\obj\Debug\net6.0-windows\SPOTIFY.GestionCanciones.resources

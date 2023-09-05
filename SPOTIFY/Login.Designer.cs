@@ -1,6 +1,6 @@
 ﻿namespace SPOTIFY
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -33,6 +33,8 @@
             PwdLogin = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -89,19 +91,32 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // Form1
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Image = Properties.Resources.Spotify_Logo;
+            pictureBox1.Location = new Point(320, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(131, 123);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(PwdLogin);
             Controls.Add(UserLogin);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Login";
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,5 +128,6 @@
         private TextBox PwdLogin;
         private Button button1;
         private Button button2;
+        private PictureBox pictureBox1;
     }
 }

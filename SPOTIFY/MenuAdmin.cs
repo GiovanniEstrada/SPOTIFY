@@ -32,5 +32,27 @@ namespace SPOTIFY
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GestionUsuarios user = new GestionUsuarios(this.vlUser, this.vlName, this.vlType, this.vlID);
+            user.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GestionarArtista artista = new GestionarArtista();
+            artista.Show();
+        }
     }
 }

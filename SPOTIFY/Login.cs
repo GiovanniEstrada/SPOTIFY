@@ -5,9 +5,9 @@ using MySql.Data.MySqlClient;
 // ...
 namespace SPOTIFY
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -49,14 +49,19 @@ namespace SPOTIFY
                             string NameResponse = Convert.ToString(reader["NAME"]);
                             string TypeUserResponse = Convert.ToString(reader["TIPO_USER"]);
                             string IdUser = Convert.ToString(reader["ID"]);
-                            MessageBox.Show($"Bienvenido! {UserResponse}");
+                            MessageBox.Show($"Bienvenido! {NameResponse}");
 
                             // Se valida si el usuario es admin o cliente
-                            if (TypeUserResponse == "ADMIN") {
+                            if (TypeUserResponse == "ADMIN")
+                            {
                                 MenuAdmin MenuAdmin = new MenuAdmin(UserResponse, NameResponse, TypeUserResponse, IdUser);
+                                MenuAdmin.Show();
+                                this.Hide();
                             }
                             else
-                            { }
+                            { 
+                                MenuCliente MenuCliente = new MenuCliente(UserResponse, NameResponse, TypeUserResponse, IdUser);
+                            }
 
                         }
                         else

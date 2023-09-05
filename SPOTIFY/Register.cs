@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SPOTIFY
 {
-    public partial class Form2 : Form
+    public partial class Register : Form
     {
-        public Form2()
+        public Register()
         {
             InitializeComponent();
 
@@ -21,7 +21,7 @@ namespace SPOTIFY
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Login form1 = new Login();
             form1.Show();
             this.Hide();
         }
@@ -34,10 +34,16 @@ namespace SPOTIFY
             string vlPwdReg = PwdRegister.Text;
             string vlPwdReg2 = Pwd2Register.Text;
 
-            if(vlPwdReg.Equals(vlPwdReg2))
+            // Se valida que la contraseña sea igual
+            if (!vlPwdReg.Equals(vlPwdReg2))
 
             {
                 MessageBox.Show("Contraseñas no coinciden, vuelva a intentar");
+            }
+            // Se valida que no vengan campos vacios
+            else if (string.IsNullOrWhiteSpace(vlNameReg) || string.IsNullOrWhiteSpace(vlUserReg) || string.IsNullOrWhiteSpace(vlPwdReg))
+            {
+                MessageBox.Show("No se permiten campos vacios");
             }
             else
             {
@@ -45,7 +51,7 @@ namespace SPOTIFY
                 {
                     connection.Open();
 
-                    // Consulta para verificar si el usuario y la contraseña coinciden
+                    // Se realiza la insercion de la nueva cuenta
                     string consulta = "INSERT INTO USUARIO (NAME, USERNAME, PWD, TIPO_USER) VALUES (@NAME, @USER, @PWD, @TIPO)";
 
                     using (MySqlCommand cmd = new MySqlCommand(consulta, connection))
@@ -61,20 +67,18 @@ namespace SPOTIFY
                         if (filasAfectadas > 0)
                         {
                             MessageBox.Show($"Usuario creado, proceda a inicar sesion");
+                            // Se oculta el form actual y te devuelve al login
+                            Login form1 = new Login();
+                            form1.Show();
+                            this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Usuario o contraseña invalida, vuelve a intentar");
+                            MessageBox.Show("Ha ocurrido un error, vuelve a intentar");
                         }
                     }
                 }
             }
-
-            
-
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
         }
     }
 }
